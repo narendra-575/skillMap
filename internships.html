@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internship Matching | SkillMap</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .internship-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #666;
+        }
+
+        .match-info {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .internship-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .internship-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .internship-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin: 5px 3px 10px 0;
+        }
+
+        .match-score {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .apply-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #4f46e5;
+            color: white;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 700px) {
+            .internship-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SkillMap</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="analysis.html">Analysis</a>
+            <a href="roadmap.html">Roadmap</a>
+        </div>
+    </nav>
+
+
+    <div class="internship-container">
+
+        <!-- Header -->
+        <div class="page-header">
+            <h1>💼 Internship Matches</h1>
+
+            <p>
+                Opportunities matched with your skills and target role.
+            </p>
+        </div>
+
+
+        <!-- Match Information -->
+        <div class="match-info">
+            <h2>🎯 Target Role: Backend Developer</h2>
+
+            <p>
+                SkillMap recommends opportunities based on your
+                current skills, career goal and skill gaps.
+            </p>
+        </div>
+
+
+        <!-- Internship Cards -->
+        <div class="internship-grid">
+
+            <div class="internship-card">
+
+                <h3>Backend Development Intern</h3>
+
+                <span class="tag">Python</span>
+                <span class="tag">APIs</span>
+                <span class="tag">SQL</span>
+
+                <p>
+                    Work on backend applications and API development.
+                </p>
+
+                <p class="match-score">
+                    Skill Match: 78%
+                </p>
+
+                <button class="apply-btn"
+                        onclick="showInternship()">
+                    View Opportunity
+                </button>
+
+            </div>
+
+
+            <div class="internship-card">
+
+                <h3>Python Developer Intern</h3>
+
+                <span class="tag">Python</span>
+                <span class="tag">Programming</span>
+                <span class="tag">Git</span>
+
+                <p>
+                    Develop Python-based applications and improve
+                    real-world programming skills.
+                </p>
+
+                <p class="match-score">
+                    Skill Match: 72%
+                </p>
+
+                <button class="apply-btn"
+                        onclick="showInternship()">
+                    View Opportunity
+                </button>
+
+            </div>
+
+
+            <div class="internship-card">
+
+                <h3>Software Development Intern</h3>
+
+                <span class="tag">DSA</span>
+                <span class="tag">Programming</span>
+                <span class="tag">Git</span>
+
+                <p>
+                    Participate in software development projects
+                    and solve programming problems.
+                </p>
+
+                <p class="match-score">
+                    Skill Match: 65%
+                </p>
+
+                <button class="apply-btn"
+                        onclick="showInternship()">
+                    View Opportunity
+                </button>
+
+            </div>
+
+
+            <div class="internship-card">
+
+                <h3>Web Backend Intern</h3>
+
+                <span class="tag">REST API</span>
+                <span class="tag">Database</span>
+                <span class="tag">Python</span>
+
+                <p>
+                    Learn backend architecture, databases and
+                    REST API development.
+                </p>
+
+                <p class="match-score">
+                    Skill Match: 61%
+                </p>
+
+                <button class="apply-btn"
+                        onclick="showInternship()">
+                    View Opportunity
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function showInternship() {
+            alert("Opportunity details will be available in the next version.");
+        }
+    </script>
+
+</body>
+</html>

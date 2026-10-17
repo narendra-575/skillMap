@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personalized Roadmap | SkillMap</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .roadmap-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #666;
+        }
+
+        .role-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .role-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .roadmap {
+            display: grid;
+            gap: 20px;
+        }
+
+        .roadmap-step {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #4f46e5;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 8px 13px;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .roadmap-step h3 {
+            margin: 5px 0 10px;
+        }
+
+        .roadmap-step ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .internship-card {
+            margin-top: 30px;
+            background: #eef2ff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .internship-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .internship-card button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: #4f46e5;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .internship-card button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SkillMap</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="analysis.html">Analysis</a>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="roadmap-container">
+
+        <div class="page-header">
+            <h1>Your Personalized Career Roadmap</h1>
+            <p>Based on your current skills and target career role.</p>
+        </div>
+
+
+        <!-- Target Role -->
+        <div class="role-card">
+            <h2>🎯 Target Role: Backend Developer</h2>
+            <p>
+                Your analysis shows that you should focus on Python,
+                DSA, Backend Development and REST APIs.
+            </p>
+        </div>
+
+
+        <!-- Roadmap -->
+        <div class="roadmap">
+
+            <!-- Step 1 -->
+            <div class="roadmap-step">
+                <span class="step-number">1</span>
+
+                <h3>Strengthen Python</h3>
+
+                <p>Build a strong programming foundation.</p>
+
+                <ul>
+                    <li>Python basics</li>
+                    <li>Functions and modules</li>
+                    <li>Lists, dictionaries and sets</li>
+                    <li>Object-Oriented Programming</li>
+                </ul>
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="roadmap-step">
+                <span class="step-number">2</span>
+
+                <h3>Improve DSA</h3>
+
+                <p>Develop problem-solving and coding skills.</p>
+
+                <ul>
+                    <li>Arrays and strings</li>
+                    <li>Searching and sorting</li>
+                    <li>Hashing</li>
+                    <li>Linked List</li>
+                    <li>Stack and Queue</li>
+                </ul>
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="roadmap-step">
+                <span class="step-number">3</span>
+
+                <h3>Learn Backend Development</h3>
+
+                <p>Learn how the server side of a web application works.</p>
+
+                <ul>
+                    <li>Backend fundamentals</li>
+                    <li>APIs</li>
+                    <li>Server-side programming</li>
+                    <li>Database fundamentals</li>
+                </ul>
+            </div>
+
+
+            <!-- Step 4 -->
+            <div class="roadmap-step">
+                <span class="step-number">4</span>
+
+                <h3>Learn REST APIs</h3>
+
+                <p>Understand how frontend and backend communicate.</p>
+
+                <ul>
+                    <li>HTTP basics</li>
+                    <li>GET and POST requests</li>
+                    <li>API integration</li>
+                    <li>JSON data</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- Internship Section -->
+        <div class="internship-card">
+
+            <h2>💼 Find Relevant Internships</h2>
+
+            <p>
+                Based on your target role and skill profile,
+                SkillMap can help you discover relevant internship opportunities.
+            </p>
+
+            
+            <button onclick="window.location.href='internships.html'">
+    Find Internships
+</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function findInternships() {
+            alert("Internship matching feature coming soon!");
+        }
+    </script>
+
+</body>
+</html>

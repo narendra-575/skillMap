@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillMap - Skill Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .analysis-page {
+            min-height: calc(100vh - 75px);
+            padding: 50px 8%;
+        }
+
+        .analysis-header {
+            margin-bottom: 30px;
+        }
+
+        .analysis-header p {
+            color: #667085;
+            margin-top: 8px;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .analysis-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+
+        .readiness {
+            text-align: center;
+        }
+
+        .score {
+            font-size: 55px;
+            font-weight: bold;
+            color: #4f46e5;
+            margin: 20px 0;
+        }
+
+        .score-label {
+            color: #667085;
+        }
+
+        .skill-row {
+            margin: 20px 0;
+        }
+
+        .skill-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+
+        .bar {
+            height: 9px;
+            background: #e9ecf2;
+            border-radius: 20px;
+        }
+
+        .fill {
+            height: 100%;
+            border-radius: 20px;
+            background: #4f46e5;
+        }
+
+        .gap {
+            margin: 15px 0;
+            padding: 14px;
+            background: #fff7ed;
+            border-radius: 9px;
+        }
+
+        .strong {
+            margin: 15px 0;
+            padding: 14px;
+            background: #ecfdf3;
+            border-radius: 9px;
+        }
+
+        .next-btn {
+            display: block;
+            margin-top: 30px;
+            padding: 14px 22px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">SkillMap</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+        </div>
+
+        <button class="login-btn">Login</button>
+    </nav>
+
+
+    <section class="analysis-page">
+
+        <div class="analysis-header">
+            <h1>Skill Gap Analysis</h1>
+
+            <p>
+                Your current skills compared with the requirements of your target career.
+            </p>
+        </div>
+
+
+        <div class="analysis-grid">
+
+            <!-- Career Readiness -->
+
+            <div class="analysis-card readiness">
+
+                <h2>Career Readiness</h2>
+
+                <div class="score">48%</div>
+
+                <p class="score-label">
+                    Target Role: <strong>Backend Developer</strong>
+                </p>
+
+                <button class="next-btn"
+                        onclick="window.location.href='roadmap.html'">
+                    View Personalized Roadmap →
+                </button>
+
+            </div>
+
+
+            <!-- Skill Levels -->
+
+            <div class="analysis-card">
+
+                <h2>Current Skill Level</h2>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-title">
+                        <span>C++</span>
+                        <strong>70%</strong>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill" style="width:70%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-title">
+                        <span>Python</span>
+                        <strong>45%</strong>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill" style="width:45%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-title">
+                        <span>DSA</span>
+                        <strong>30%</strong>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill" style="width:30%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-title">
+                        <span>SQL</span>
+                        <strong>50%</strong>
+                    </div>
+
+                    <div class="bar">
+                        <div class="fill" style="width:50%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Strengths -->
+
+            <div class="analysis-card">
+
+                <h2>✓ Your Strengths</h2>
+
+                <div class="strong">
+                    C++ — Good foundation
+                </div>
+
+                <div class="strong">
+                    SQL — Basic working knowledge
+                </div>
+
+            </div>
+
+
+            <!-- Skill Gaps -->
+
+            <div class="analysis-card">
+
+                <h2>⚠ Skill Gaps</h2>
+
+                <div class="gap">
+                    Python — Needs improvement
+                </div>
+
+                <div class="gap">
+                    DSA — Needs improvement
+                </div>
+
+                <div class="gap">
+                    Backend Development — Required
+                </div>
+
+                <div class="gap">
+                    REST APIs — Required
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
